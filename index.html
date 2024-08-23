@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルークの食べたもの記録</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>愛犬ルークの健康管理</h1>
+        <div class=subtitle><p>お肉、野菜、フルーツ、バランスよく食べて、散歩もしましょう</p></div></p>
+    </header>
+    <div class="container">
+        <div class="left-pane">
+            <label for="date">日付を選択:</label>
+            <input type="date" id="date">
+
+            <div class="buttons">
+                <img src="img/niku.png" alt="肉" onclick="recordFood('meat')" class="food-image">
+                <img src="img/yasai.png" alt="野菜" onclick="recordFood('vegetable')" class="food-image">
+                <img src="img/果物.png" alt="フルーツ" onclick="recordFood('fruit')" class="food-image">
+                <img src="img/sanpo.png" alt="散歩" onclick="recordFood('sanpo')" class="food-image">
+            </div>
+        </div>
+
+        <div class="right-pane">
+            <div id="recordList"></div>
+            <button id="resetButton" onclick="resetRecords()">リセット</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
